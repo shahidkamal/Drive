@@ -79,12 +79,12 @@ public class Game : MonoBehaviour
     private void SpawnPlayer()
     {
         var go = ObjectPool.Pool.Get();
-        go.SetActive(true);
         var vehicle = go.GetComponent<Vehicle>();
+        vehicle.SetPosition(_playerSpawn.position);
+        go.SetActive(true);
         _playerVehicle = vehicle;
         vehicle.underAIControl = false;
         vehicle.SetSprite(settings.PlayerSprite);
-        vehicle.SetPosition(new Vector2(_playerSpawn.position.x, _playerSpawn.position.y));
     }
 
     private void AICarSpawnCheck()

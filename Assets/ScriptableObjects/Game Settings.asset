@@ -23,8 +23,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e8e4ba36562a78844bb5c7abcdb45dd1, type: 3}
   aiCarMinSpeed: -2
   aiCarMaxSpeed: -7
-  aiCarFrequencyMin: 0.5
-  aiCarAppearChance: 0.4
+  aiCarFrequencyMin: 0.4
+  aiCarAppearChance: 1
   playerSprite: {fileID: 21300000, guid: f00cbb912392c0c4fba74a7d0d42d2c3, type: 3}
   playerSteerSpeed: 5
   playerLeftScreenBound: -2.5

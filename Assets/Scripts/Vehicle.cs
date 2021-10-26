@@ -137,9 +137,9 @@ public class Vehicle : MonoBehaviour
 
     public void SetPosition(Vector2 position)
     {
-        _rigidbody2D.MovePosition(position);
         _rigidbody2D.angularVelocity = 0;
         _rigidbody2D.SetRotation(Quaternion.identity);        
         _rigidbody2D.velocity = Vector2.zero;
+        _rigidbody2D.MovePosition(position);
     }
 }
