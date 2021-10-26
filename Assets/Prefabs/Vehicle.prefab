@@ -46,4 +46,4 @@ MonoBehaviour:
   underAIControl: 0
   steerSpeed: 2
   speed: 0
-  carSprite: {fileID: 21300000, guid: f00cbb912392c0c4fba74a7d0d42d2c3, type: 3}
+  carSprite: {fileID: 0}
