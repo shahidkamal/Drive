@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bd248af-e6cb-4776-b457-e5491c15ca6a" name="Default Changelist" comment="" />
+    <list default="true" id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="Started separating the vehicle code into a hierarchy" />
+    <list id="0bd248af-e6cb-4776-b457-e5491c15ca6a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +32,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
       </list>
@@ -27,6 +48,12 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -51,22 +78,77 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
+      <branch name="dev" repository="C:\Users\shahid\Projects\Drive" />
       <changelist id="0bd248af-e6cb-4776-b457-e5491c15ca6a" name="Default Changelist" comment="" />
       <created>1635279585991</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1635279585991</updated>
+      <updated>1635282368515</updated>
       <workItem from="1635279598280" duration="1551000" />
+      <workItem from="1635281784413" duration="582000" />
     </task>
-    <servers />
+    <task active="true" id="LOCAL-00001" summary="Vehicle Class Hierarchy">
+      <branch name="dev" repository="C:\Users\shahid\Projects\Drive" original="true" />
+      <branch name="Vehicle-Class" repository="C:\Users\shahid\Projects\Drive" />
+      <changelist id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="" />
+      <created>1635282351574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635282368515</updated>
+      <workItem from="1635282369080" duration="1624000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers>
+      <GitHub url="https://github.com">
+        <option name="repoAuthor" value="shahidkamal" />
+        <option name="repoName" value="Drive" />
+      </GitHub>
+    </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="668" y="337" key="#Servers" timestamp="1635282283049">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="668" y="337" key="#Servers/0.0.1920.1200@0.0.1920.1200" timestamp="1635282283049" />
+    <state x="724" y="432" key="SimpleOpenTaskDialog" timestamp="1635282368641">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="724" y="432" key="SimpleOpenTaskDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1635282368641" />
+    <state x="623" y="266" width="672" height="678" key="search.everywhere.popup" timestamp="1635282541421">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="623" y="266" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1635282541421" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

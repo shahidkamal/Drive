@@ -52,7 +52,7 @@ public class Game : MonoBehaviour
             if (!go.activeSelf)
             {
                 var vehicle = go.GetComponent<Vehicle>();
-                vehicle.InitAI(Random.Range(settings.AICarMinSpeed, settings.AICarMaxSpeed), settings.VehicleSprites[Random.Range(0, settings.VehicleSprites.Length)]);
+                vehicle.Init(Random.Range(settings.AICarMinSpeed, settings.AICarMaxSpeed), settings.VehicleSprites[Random.Range(0, settings.VehicleSprites.Length)]);
                 vehicle.ResetPosition();
             }
         }
