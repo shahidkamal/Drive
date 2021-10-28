@@ -6,7 +6,7 @@ public class AIVehicle : Vehicle
     {
         base.FixedUpdate();
             
-        if (_initialPos.y < -5.5f)
+        if (_initialPos.y < -Game.Instance.ScreenHeightUnits * 0.5f)
         {
             ResetPosition();
             ObjectPool.Pool.Release(gameObject);
@@ -20,6 +20,10 @@ public class AIVehicle : Vehicle
     public override void ResetPosition()
     {
         base.ResetPosition();
-        SetPosition(new Vector2(Random.Range(-2.5f, 2.5f), 6));
+        var lane = Random.Range(0, Game.NumLanes);
+        var xPos = Game.LaneWidth / 2;    // Centre in lane
+        xPos -= (Game.LaneWidth * Game.NumLanes / 2);
+        xPos += lane * Game.LaneWidth;
+        SetPosition(new Vector2(xPos, Game.Instance.ScreenHeightUnits / 2));
     }
 }

@@ -14,7 +14,7 @@ public class RoadLines : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _speed = -1/120f;
+        _speed = -1/60f;
     }
 
     // Update is called once per frame

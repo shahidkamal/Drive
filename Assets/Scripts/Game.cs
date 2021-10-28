@@ -5,10 +5,11 @@ using Random = UnityEngine.Random;
 using TMPro;
 
 public class Game : MonoBehaviour
-{ 
-    private static Game _instance;
+{
+    public static Game Instance { get; private set; }
 
-    public static Game Instance => _instance;
+    public const int NumLanes = 4;
+    public const float LaneWidth = 1.333f;
     
 #pragma warning disable 649 // 'field' is never assigned to
     [Tooltip("Settings")] [SerializeField]
@@ -33,18 +34,19 @@ public class Game : MonoBehaviour
     public float ScreenWidthPixels { get; private set; }
     public float ScreenHeightPixels { get; private set; }
     
-    public float ScreenWidthView { get; private set; }
-    public float ScreenHeightView { get; private set; }
+    public float ScreenWidthUnits { get; private set; }
+    public float ScreenHeightUnits { get; private set; }
+    
     
     private void Awake() 
     { 
-        if (_instance != null && _instance != this) 
+        if (Instance != null && Instance != this) 
         { 
             Destroy(gameObject);
             return;
         }
 
-        _instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
         
         // Determine screen world space boundaries irrespective of screen size or aspect ratio
@@ -54,8 +56,8 @@ public class Game : MonoBehaviour
 
         var topleft = _camera.ScreenToWorldPoint(new Vector3(0, 0, _camera.nearClipPlane));
         var bottomRight = _camera.ScreenToWorldPoint(new Vector3(ScreenWidthPixels, ScreenHeightPixels, _camera.nearClipPlane));
-        ScreenWidthView = bottomRight.x - topleft.x;
-        ScreenHeightView = bottomRight.y - topleft.y;
+        ScreenWidthUnits = bottomRight.x - topleft.x;
+        ScreenHeightUnits = bottomRight.y - topleft.y;
     }
 
     private void Start()

@@ -9,8 +9,10 @@
         <e p="Scripts" t="Include">
           <e p="AIVehicle.cs" t="Include" />
           <e p="Game.cs" t="Include" />
+          <e p="ListExtensions.cs" t="Include" />
           <e p="ObjectPool.cs" t="Include" />
           <e p="PlayerVehicle.cs" t="Include" />
+          <e p="Road.cs" t="Include" />
           <e p="RoadLines.cs" t="Include" />
           <e p="Settings.cs" t="Include" />
           <e p="Vehicle.cs" t="Include" />
