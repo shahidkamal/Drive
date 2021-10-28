@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1657436570253504467, guid: 77b410ca761d56741abed3719a560449, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4067157648373654594, guid: 77b410ca761d56741abed3719a560449, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
@@ -163,5 +167,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8377693789021424042, guid: 77b410ca761d56741abed3719a560449, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 77b410ca761d56741abed3719a560449, type: 3}
+--- !u!1 &7161249438086043586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8377693789021424039, guid: 77b410ca761d56741abed3719a560449, type: 3}
+  m_PrefabInstance: {fileID: 1666985458213314149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-9114712122155723319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7161249438086043586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d270fbc8614583b2b7a9b6bde1919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _steeringResponse: 0
+  _maxSpeed: 0
+  _sprite: {fileID: 0}

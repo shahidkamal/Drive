@@ -27,6 +27,24 @@
   <component name="ChangeListManager">
     <list default="true" id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="">
       <changelist_data name="shahid" email="" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car6.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car7.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Alt.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Alt.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" afterDir="false" />
     </list>
     <list id="0bd248af-e6cb-4776-b457-e5491c15ca6a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,13 +55,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
       </list>
     </option>
   </component>
@@ -62,6 +85,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -105,7 +129,7 @@
       <option name="project" value="LOCAL" />
       <updated>1635282368515</updated>
       <workItem from="1635282369080" duration="1624000" />
-      <workItem from="1635415785159" duration="5148000" />
+      <workItem from="1635415785159" duration="10946000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers>
@@ -152,10 +176,18 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="668" y="337" key="#Servers/0.0.1920.1200@0.0.1920.1200" timestamp="1635282283049" />
+    <state x="3123" y="367" key="SettingsEditor" timestamp="1635421770010">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="3123" y="367" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1635421770010" />
     <state x="724" y="432" key="SimpleOpenTaskDialog" timestamp="1635282368641">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="724" y="432" key="SimpleOpenTaskDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1635282368641" />
+    <state x="3422" y="623" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1635421299712">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="3422" y="623" key="git4idea.remote.GitConfigureRemotesDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1635421299712" />
     <state x="623" y="266" width="672" height="678" key="search.everywhere.popup" timestamp="1635282541421">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
