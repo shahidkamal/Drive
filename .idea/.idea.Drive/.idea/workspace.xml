@@ -26,19 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="">
-      <changelist_data name="shahid" email="" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Alt.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Alt.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" afterDir="false" />
@@ -61,12 +48,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
       </list>
     </option>
   </component>
@@ -129,7 +116,7 @@
       <option name="project" value="LOCAL" />
       <updated>1635282368515</updated>
       <workItem from="1635282369080" duration="1624000" />
-      <workItem from="1635415785159" duration="10946000" />
+      <workItem from="1635415785159" duration="11263000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers>
