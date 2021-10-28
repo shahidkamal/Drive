@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: Game Settings
   m_EditorClassIdentifier: 
   maxActiveCars: 5
-  vehicleSprites:
-  - {fileID: 21300000, guid: 9022f4747f0c1824f96338aa0250f40c, type: 3}
-  - {fileID: 21300000, guid: c2bd2b83d2c3fc04e84d6144d0ed249f, type: 3}
-  - {fileID: 21300000, guid: 4d7277d4e3099d14687f89076388261b, type: 3}
-  - {fileID: 21300000, guid: 2f27fa98af6744346bf4105e1707a2c1, type: 3}
-  - {fileID: 21300000, guid: a92c76142e394c548aba0005717a672f, type: 3}
-  - {fileID: 21300000, guid: 7dde6004e98375043a2aa3b9620f7849, type: 3}
-  - {fileID: 21300000, guid: e8e4ba36562a78844bb5c7abcdb45dd1, type: 3}
+  vehiclePrefabs:
+  - {fileID: 8409035800976448208, guid: 1488e93dc78421140a95da631ba35106, type: 3}
+  - {fileID: 7282615364697673198, guid: 24ecc7067eb95fd4999818813f671e0e, type: 3}
+  - {fileID: 6522346153862778897, guid: d4c644d1c2b4f024abae1e400fa2c810, type: 3}
+  - {fileID: 4285876369137073853, guid: 09964a03a58c24e4897ef931990fa82e, type: 3}
+  - {fileID: 8133109537687962113, guid: 7f153eb48d7075a4eade6ce58b2425b1, type: 3}
+  - {fileID: 7161249438086043586, guid: 62ca8bcc8548b0b4a89ab37f757fa89e, type: 3}
+  - {fileID: 5377936423874831598, guid: 621a547ee6a71ce4797d5cae580057ac, type: 3}
   aiCarMinSpeed: -2
   aiCarMaxSpeed: -7
   aiCarFrequencyMin: 0.4
   aiCarAppearChance: 1
-  playerSprite: {fileID: 21300000, guid: f00cbb912392c0c4fba74a7d0d42d2c3, type: 3}
+  playerPrefab: {fileID: 6087571698647895209, guid: 8ceaff5e75f54394bbcc07e9db9e0bcb, type: 3}
   playerSteerSpeed: 5
   playerLeftScreenBound: -2.5
   playerRightScreenBound: 2.5
-  keyRight: 46
-  keyLeft: 44
+  keyLeft: 97
+  keyRight: 100

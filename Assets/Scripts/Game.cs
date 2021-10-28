@@ -24,11 +24,17 @@ public class Game : MonoBehaviour
     
     private float _gameTimer;
     private float _aiCarAppearTimer;
+    private Camera _camera;
     
     public Settings Settings => settings;
 
     private GameObject _playerGo;
-    private PlayerVehicle _playerVehicle = null;
+    private PlayerVehicle _playerVehicle;
+    public float ScreenWidthPixels { get; private set; }
+    public float ScreenHeightPixels { get; private set; }
+    
+    public float ScreenWidthView { get; private set; }
+    public float ScreenHeightView { get; private set; }
     
     private void Awake() 
     { 
@@ -40,6 +46,16 @@ public class Game : MonoBehaviour
 
         _instance = this;
         DontDestroyOnLoad(gameObject);
+        
+        // Determine screen world space boundaries irrespective of screen size or aspect ratio
+        _camera = Camera.main;
+        ScreenWidthPixels = Screen.width;
+        ScreenHeightPixels = Screen.height;
+
+        var topleft = _camera.ScreenToWorldPoint(new Vector3(0, 0, _camera.nearClipPlane));
+        var bottomRight = _camera.ScreenToWorldPoint(new Vector3(ScreenWidthPixels, ScreenHeightPixels, _camera.nearClipPlane));
+        ScreenWidthView = bottomRight.x - topleft.x;
+        ScreenHeightView = bottomRight.y - topleft.y;
     }
 
     private void Start()

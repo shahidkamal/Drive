@@ -11,6 +11,7 @@
           <e p="Game.cs" t="Include" />
           <e p="ObjectPool.cs" t="Include" />
           <e p="PlayerVehicle.cs" t="Include" />
+          <e p="RoadLines.cs" t="Include" />
           <e p="Settings.cs" t="Include" />
           <e p="Vehicle.cs" t="Include" />
         </e>

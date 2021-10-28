@@ -200,6 +200,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e8e4ba36562a78844bb5c7abcdb45dd1, type: 3}
     - target: {fileID: 4143825021648649399, guid: 77b410ca761d56741abed3719a560449, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143825021648649399, guid: 77b410ca761d56741abed3719a560449, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1184294307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143825021648649399, guid: 77b410ca761d56741abed3719a560449, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -277,4 +285,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _steeringResponse: 0
   _maxSpeed: 0
-  _sprite: {fileID: 0}
