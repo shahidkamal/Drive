@@ -9,9 +9,12 @@ public class ObjectPool : MonoBehaviour
     private List<GameObject> _objectPool;
 
 #pragma warning disable 649 // 'field' is never assigned to
-    [Tooltip("Game Object to pool")] [SerializeField]
+    [Tooltip("Prefab to create pool from, null if you want to use a list, below")] [SerializeField]
     private GameObject prefab;
 
+    [Tooltip("List of prefabs to create random pool from, if you use this, ensure the prefab above is null")] [SerializeField]
+    private GameObject[] prefabs;
+    
     [Tooltip("Maximum pool size")] [SerializeField] 
     private int poolSize;
 #pragma warning restore 649 // 'field' is never assigned to
@@ -25,9 +28,18 @@ public class ObjectPool : MonoBehaviour
         _objectPool = new List<GameObject>();
         for (var i = 0; i < poolSize; ++i)
         {
-            var go = Instantiate(prefab, gameObject.transform, true);
+            GameObject go;
+            if (prefab != null)
+            {
+                go = Instantiate(prefab, gameObject.transform, true);
+            }
+            else
+            {
+                go = Instantiate(prefabs[Random.Range(0, prefabs.Length)], gameObject.transform, true);
+            }
             go.SetActive(false);
             _objectPool.Add(go);
+
         }
     }
 

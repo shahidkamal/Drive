@@ -27,14 +27,7 @@ public class PlayerVehicle : Vehicle
             _xVelocity *= 0.95f;
         }
     }
-
-    protected override void ResetCollider()
-    {
-        base.ResetCollider();
-            
-        _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
-    }
-
+    
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
@@ -45,5 +38,11 @@ public class PlayerVehicle : Vehicle
             _targetPos = _initialPos;
         }
         _rigidbody2D.MovePosition(_targetPos);
+    }
+
+    public override void ResetPosition()
+    {
+        base.ResetPosition();
+        //SetPosition(Game.Instance.PlayerSpawn.position);
     }
 }

@@ -7,10 +7,10 @@ public class Settings : ScriptableObject
     [Tooltip("Maximum Active Cars")] [SerializeField]
     private int maxActiveCars;
     public int MaxActiveCars => maxActiveCars;
-
-    [Tooltip("Vehicle sprites")] [SerializeField]
-    private Sprite[] vehicleSprites;
-    public Sprite[] VehicleSprites => vehicleSprites;
+    
+    [Tooltip("Bad guy car prefabs")] [SerializeField]
+    private GameObject[] vehiclePrefabs;
+    public GameObject[] VehiclePrefabs => vehiclePrefabs;
 
     [Tooltip("AI car minimum speed")] [SerializeField]
     private float aiCarMinSpeed;
@@ -31,10 +31,10 @@ public class Settings : ScriptableObject
     public float AICarAppearChance => aiCarAppearChance;
     
     [Header("Player")]
-    [Tooltip("Player Sprite")] [SerializeField]
-    private Sprite playerSprite;
+    [Tooltip("Player Prefab")] [SerializeField]
+    private GameObject playerPrefab;
 
-    public Sprite PlayerSprite => playerSprite;
+    public GameObject PlayerPrefab => playerPrefab;
 
     [Tooltip("Player steering speed")] [SerializeField]
     private float playerSteerSpeed;
@@ -45,23 +45,24 @@ public class Settings : ScriptableObject
 
     public float PlayerLeftScreenBound => playerLeftScreenBound;
     
-    
     [Tooltip("Right screen bound")] [SerializeField]
     private float playerRightScreenBound;
 
     public float PlayerRightScreenBound => playerRightScreenBound;
     
     [Header("Keys")]
-    [Tooltip("Right")] 
-    [SerializeField]
-    private KeyCode keyRight;
-
-    public KeyCode KeyRight => keyRight;
-    
+        
     [Tooltip("Left")] 
     [SerializeField]
     private KeyCode keyLeft;
 
     public KeyCode KeyLeft => keyLeft;
+    
+    [Tooltip("Right")] 
+    [SerializeField]
+    private KeyCode keyRight;
+
+    public KeyCode KeyRight => keyRight;
+
 
 }

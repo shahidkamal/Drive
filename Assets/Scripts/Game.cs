@@ -10,26 +10,25 @@ public class Game : MonoBehaviour
 
     public static Game Instance => _instance;
     
-    [Tooltip("Settings")] 
 #pragma warning disable 649 // 'field' is never assigned to
-    [SerializeField]
+    [Tooltip("Settings")] [SerializeField]
     private Settings settings;
     
     [Tooltip("Car spawn position")] [SerializeField]
-    private Transform _playerSpawn;
-#pragma warning restore 649 // 'field' is never assigned to
+    private Transform playerSpawn;
+    public Transform PlayerSpawn => playerSpawn;
 
-    [Tooltip("Timer")] 
-#pragma warning disable 649 // 'field' is never assigned to
-    [SerializeField]
-    private TextMeshProUGUI _timerText;
+    [Tooltip("Timer UI")]  [SerializeField]
+    private TextMeshProUGUI timerText;
 #pragma warning restore 649 // 'field' is never assigned to
+    
     private float _gameTimer;
     private float _aiCarAppearTimer;
     
     public Settings Settings => settings;
 
-    private Vehicle _playerVehicle = null;
+    private GameObject _playerGo;
+    private PlayerVehicle _playerVehicle = null;
     
     private void Awake() 
     { 
@@ -52,7 +51,7 @@ public class Game : MonoBehaviour
             if (!go.activeSelf)
             {
                 var vehicle = go.GetComponent<Vehicle>();
-                vehicle.Init(Random.Range(settings.AICarMinSpeed, settings.AICarMaxSpeed), settings.VehicleSprites[Random.Range(0, settings.VehicleSprites.Length)]);
+                vehicle.SetMaxSpeed(Random.Range(settings.AICarMinSpeed, settings.AICarMaxSpeed));
                 vehicle.ResetPosition();
             }
         }
@@ -78,12 +77,9 @@ public class Game : MonoBehaviour
 
     private void SpawnPlayer()
     {
-        var go = ObjectPool.Pool.Get();
-        var vehicle = go.GetComponent<Vehicle>();
-        vehicle.SetPosition(_playerSpawn.position);
-        go.SetActive(true);
-        _playerVehicle = vehicle;
-        vehicle.SetSprite(settings.PlayerSprite);
+        _playerGo = Instantiate(Settings.PlayerPrefab, PlayerSpawn.position, Quaternion.identity);
+        _playerVehicle = _playerGo.GetComponent<PlayerVehicle>();
+        _playerGo.SetActive(true);
     }
 
     private void AICarSpawnCheck()
@@ -107,10 +103,10 @@ public class Game : MonoBehaviour
     private void Update()
     {
         _gameTimer += Time.deltaTime;
-        _timerText.SetText(((int)_gameTimer).ToString());
+        timerText.SetText(((int)_gameTimer).ToString());
         if (_playerVehicle != null)
         {
-            _playerVehicle.SetMaxSpeed(settings.PlayerSteerSpeed);
+            _playerVehicle.SetSteeringSpeed(settings.PlayerSteerSpeed);
         }
     }
 }

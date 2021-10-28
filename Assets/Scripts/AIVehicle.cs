@@ -2,13 +2,6 @@
 
 public class AIVehicle : Vehicle
 {
-    protected override void ResetCollider()
-    {
-        base.ResetCollider();
-        _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-        _rigidbody2D.gravityScale = 0;
-    }
-
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
@@ -22,5 +15,11 @@ public class AIVehicle : Vehicle
         {
             _rigidbody2D.MovePosition(_targetPos);
         }
+    }
+
+    public override void ResetPosition()
+    {
+        base.ResetPosition();
+        SetPosition(new Vector2(Random.Range(-2.5f, 2.5f), 6));
     }
 }
