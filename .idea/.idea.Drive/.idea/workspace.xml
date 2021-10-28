@@ -16,10 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:Vehicle-Class-Hierarchy" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="Started separating the vehicle code into a hierarchy" />
+    <list default="true" id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="">
+      <changelist_data name="shahid" email="" />
+    </list>
     <list id="0bd248af-e6cb-4776-b457-e5491c15ca6a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +40,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
       </list>
     </option>
   </component>
@@ -89,8 +97,7 @@
       <workItem from="1635281784413" duration="582000" />
     </task>
     <task active="true" id="LOCAL-00001" summary="Vehicle Class Hierarchy">
-      <branch name="dev" repository="C:\Users\shahid\Projects\Drive" original="true" />
-      <branch name="Vehicle-Class" repository="C:\Users\shahid\Projects\Drive" />
+      <branch name="Vehicle-Class-Hierarchy" repository="C:\Users\shahid\Projects\Drive" />
       <changelist id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="" />
       <created>1635282351574</created>
       <option name="number" value="00001" />
@@ -98,6 +105,7 @@
       <option name="project" value="LOCAL" />
       <updated>1635282368515</updated>
       <workItem from="1635282369080" duration="1624000" />
+      <workItem from="1635415785159" duration="5148000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers>
@@ -117,11 +125,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Vehicle-Class-Hierarchy" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

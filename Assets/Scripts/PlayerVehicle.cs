@@ -7,22 +7,22 @@ public class PlayerVehicle : Vehicle
     {
         if (Input.GetKeyDown(Game.Instance.Settings.KeyLeft))
         {
-            _xVelocity = -steerSpeed;
-            _centredSteering = false;
+            _xVelocity = -_steeringResponse;
+            CentreSteering(false);
         }
                 
         if (Input.GetKeyDown(Game.Instance.Settings.KeyRight))
         {
-            _xVelocity = steerSpeed;
-            _centredSteering = false;
+            _xVelocity = _steeringResponse;
+            CentreSteering(false);
         }
 
         if (Input.GetKeyUp(Game.Instance.Settings.KeyLeft) || Input.GetKeyUp(Game.Instance.Settings.KeyRight))
         {
-            _centredSteering = true;
+            CentreSteering();
         }
 
-        if (_centredSteering)
+        if (CentredSteering)
         {
             _xVelocity *= 0.95f;
         }
@@ -45,11 +45,5 @@ public class PlayerVehicle : Vehicle
             _targetPos = _initialPos;
         }
         _rigidbody2D.MovePosition(_targetPos);
-    }
-    
-    public override void Init(float newSpeed, Sprite newSprite = null)
-    {
-        base.Init(newSpeed, newSprite);
-        underAIControl = false;
     }
 }

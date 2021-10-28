@@ -83,7 +83,6 @@ public class Game : MonoBehaviour
         vehicle.SetPosition(_playerSpawn.position);
         go.SetActive(true);
         _playerVehicle = vehicle;
-        vehicle.underAIControl = false;
         vehicle.SetSprite(settings.PlayerSprite);
     }
 
@@ -111,7 +110,7 @@ public class Game : MonoBehaviour
         _timerText.SetText(((int)_gameTimer).ToString());
         if (_playerVehicle != null)
         {
-            _playerVehicle.steerSpeed = settings.PlayerSteerSpeed;
+            _playerVehicle.SetMaxSpeed(settings.PlayerSteerSpeed);
         }
     }
 }

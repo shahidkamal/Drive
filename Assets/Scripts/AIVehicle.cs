@@ -23,10 +23,4 @@ public class AIVehicle : Vehicle
             _rigidbody2D.MovePosition(_targetPos);
         }
     }
-
-    public override void Init(float newSpeed, Sprite newSprite = null)
-    {
-        base.Init(newSpeed, newSprite);
-        underAIControl = true;
-    }
 }
