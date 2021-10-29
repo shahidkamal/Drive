@@ -19,6 +19,11 @@ public class Game : MonoBehaviour
     private Transform playerSpawn;
     public Transform PlayerSpawn => playerSpawn;
 
+    [Tooltip("Player Speed")] [SerializeField]
+    private FloatVariable playerSpeed;
+
+    public FloatVariable PlayerSpeed => playerSpeed;
+    
     [Tooltip("Timer UI")]  [SerializeField]
     private TextMeshProUGUI timerText;
 #pragma warning restore 649 // 'field' is never assigned to
@@ -90,6 +95,7 @@ public class Game : MonoBehaviour
             go.SetActive(true);
             var vehicle = go.GetComponent<Vehicle>();
             vehicle.ResetPosition();
+            vehicle.EnableCollder();
         }
     }
 

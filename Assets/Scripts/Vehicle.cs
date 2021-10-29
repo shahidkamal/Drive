@@ -14,7 +14,7 @@ public class Vehicle : MonoBehaviour
     
     public float MaxSpeed => _maxSpeed;
     
-    private PolygonCollider2D _collider;
+    protected PolygonCollider2D _collider;
     protected Rigidbody2D _rigidbody2D;
     protected float _xVelocity;
     protected bool CentredSteering { get; private set; }
@@ -22,7 +22,7 @@ public class Vehicle : MonoBehaviour
     protected Vector2 _targetPos;
     protected Vector2 _initialPos;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         // Cache rigidbody and collider for later frequent access
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
@@ -40,7 +40,7 @@ public class Vehicle : MonoBehaviour
         _initialPos = _rigidbody2D.position;
         var velocity = Vector2.zero;
         velocity.x = _xVelocity;
-        velocity.y = _maxSpeed;
+        velocity.y = _maxSpeed - Game.Instance.PlayerSpeed;
         _targetPos = _initialPos + velocity * Time.fixedDeltaTime;
     }
 
@@ -70,5 +70,10 @@ public class Vehicle : MonoBehaviour
     protected void CentreSteering(bool centred = true)
     {
         CentredSteering = centred;
+    }
+
+    public void EnableCollder(bool enable = true)
+    {
+        _collider.enabled = enable;
     }
 }

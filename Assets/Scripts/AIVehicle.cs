@@ -10,6 +10,7 @@ public class AIVehicle : Vehicle
             
         if (_initialPos.y < -Game.Instance.ScreenHeightUnits * 0.5f)
         {
+            _collider.enabled = false;
             ResetPosition();
             ObjectPool.Pool.Release(gameObject);
         }

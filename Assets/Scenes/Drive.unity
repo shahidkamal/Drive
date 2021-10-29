@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: ad0eec5dd4a8693489ebced93b8a2fb9, type: 2}
   playerSpawn: {fileID: 444272278}
+  playerSpeed: {fileID: 11400000, guid: e1290fbfa6845de48984eba07065b594, type: 2}
   timerText: {fileID: 1170552008}
 --- !u!4 &23848023
 Transform:
@@ -785,6 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cead705c6426a14c98147830ef40d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpeed: {fileID: 11400000, guid: e1290fbfa6845de48984eba07065b594, type: 2}
   _lines:
   - {fileID: 1342301210}
   - {fileID: 1664143163}

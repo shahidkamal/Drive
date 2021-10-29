@@ -26,6 +26,7 @@ public class PlayerVehicle : Vehicle
         {
             _xVelocity *= 0.95f;
         }
+        _maxSpeed = Game.Instance.PlayerSpeed;
     }
     
     protected override void FixedUpdate()
