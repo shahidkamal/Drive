@@ -14,6 +14,7 @@ public class Road : MonoBehaviour
     
     private void Awake()
     {
+        // TODO: This is stupid and broken, don't use the results
         for (var i = 0; i < _laneBufferDize * Game.NumLanes; i += Game.NumLanes)
         {
             for (var j = 0; j < Game.NumLanes; ++j)

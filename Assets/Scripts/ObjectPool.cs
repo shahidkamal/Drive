@@ -17,10 +17,15 @@ public class ObjectPool : MonoBehaviour
     
     [Tooltip("Maximum pool size")] [SerializeField] 
     private int poolSize;
+
+    [Tooltip("Do we want a random fetch?")] [SerializeField]
+    private bool fetchRandomly;
+    
 #pragma warning restore 649 // 'field' is never assigned to
 
     public int Count { get; private set; }
-
+    private List<GameObject> _candidates = new List<GameObject>();
+    
     private void Awake()
     {
         Pool = this;
@@ -45,13 +50,29 @@ public class ObjectPool : MonoBehaviour
 
     public GameObject Get()
     {
+        _candidates.Clear();
+        
         for (var i = 0; i < poolSize; ++i)
         {
             if (!_objectPool[i].activeInHierarchy)
             {
-                ++Count;
-                return _objectPool[i];
+                if (fetchRandomly)
+                {
+                    _candidates.Add(_objectPool[i]);
+                }
+                else
+                {
+                    ++Count;
+                    return _objectPool[i];
+                }
             }
+        }
+
+        // If we want a random object from the pool, return one here
+        if (fetchRandomly && _candidates.Count > 0)
+        {
+            ++Count;
+            return _candidates[Random.Range(0, _candidates.Count)];
         }
 
         return null;

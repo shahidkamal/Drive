@@ -39,10 +39,4 @@ public class PlayerVehicle : Vehicle
         }
         _rigidbody2D.MovePosition(_targetPos);
     }
-
-    public override void ResetPosition()
-    {
-        base.ResetPosition();
-        //SetPosition(Game.Instance.PlayerSpawn.position);
-    }
 }

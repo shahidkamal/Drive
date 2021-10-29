@@ -2,6 +2,8 @@
 
 public class AIVehicle : Vehicle
 {
+    private static int _previousLane = -1;
+    
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
@@ -20,10 +22,15 @@ public class AIVehicle : Vehicle
     public override void ResetPosition()
     {
         base.ResetPosition();
-        var lane = Random.Range(0, Game.NumLanes);
+        int lane;
+        do {
+            lane = Random.Range(0, Game.NumLanes);
+        } while (lane == _previousLane);
+
+        _previousLane = lane;
         var xPos = Game.LaneWidth / 2;    // Centre in lane
         xPos -= (Game.LaneWidth * Game.NumLanes / 2);
         xPos += lane * Game.LaneWidth;
-        SetPosition(new Vector2(xPos, Game.Instance.ScreenHeightUnits / 2));
+        SetPosition(new Vector2(xPos, Game.Instance.ScreenHeightUnits / 2 + 1));
     }
 }

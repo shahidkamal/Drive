@@ -649,6 +649,7 @@ MonoBehaviour:
   - {fileID: 7161249438086043586, guid: 62ca8bcc8548b0b4a89ab37f757fa89e, type: 3}
   - {fileID: 5377936423874831598, guid: 621a547ee6a71ce4797d5cae580057ac, type: 3}
   poolSize: 64
+  fetchRandomly: 1
 --- !u!4 &520642088
 Transform:
   m_ObjectHideFlags: 0
