@@ -15,10 +15,9 @@ public class Game : MonoBehaviour
     [Tooltip("Settings")] [SerializeField]
     private Settings settings;
     
-    [Tooltip("Car spawn position")] [SerializeField]
-    private Transform playerSpawn;
-    public Transform PlayerSpawn => playerSpawn;
-
+    [Tooltip("Player vehicle")] [SerializeField]
+    private PlayerVehicle _playerVehicle;
+    
     [Tooltip("Player Speed")] [SerializeField]
     private FloatVariable playerSpeed;
 
@@ -35,7 +34,7 @@ public class Game : MonoBehaviour
     public Settings Settings => settings;
 
     private GameObject _playerGo;
-    private PlayerVehicle _playerVehicle;
+
     public float ScreenWidthPixels { get; private set; }
     public float ScreenHeightPixels { get; private set; }
     
@@ -67,8 +66,6 @@ public class Game : MonoBehaviour
 
     private void Start()
     {
-        SpawnPlayer();
-
         foreach (var go in ObjectPool.Pool.Iterator())
         {
             if (!go.activeSelf)
@@ -98,13 +95,6 @@ public class Game : MonoBehaviour
             vehicle.WakePhysics();
             vehicle.EnableCollder();
         }
-    }
-
-    private void SpawnPlayer()
-    {
-        _playerGo = Instantiate(Settings.PlayerPrefab, PlayerSpawn.position, Quaternion.identity);
-        _playerVehicle = _playerGo.GetComponent<PlayerVehicle>();
-        _playerGo.SetActive(true);
     }
 
     private void AICarSpawnCheck()

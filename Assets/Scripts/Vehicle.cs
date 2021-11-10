@@ -40,7 +40,7 @@ public class Vehicle : MonoBehaviour
         _initialPos = _rigidbody2D.position;
         var velocity = Vector2.zero;
         velocity.x = _xVelocity;
-        velocity.y = _maxSpeed - Game.Instance.PlayerSpeed;
+        velocity.y = _maxSpeed; // - Game.Instance.PlayerSpeed;
         _targetPos = _initialPos + velocity * Time.fixedDeltaTime;
     }
 
