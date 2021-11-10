@@ -8,8 +8,9 @@ public class AIVehicle : Vehicle
     {
         base.FixedUpdate();
             
-        if (_initialPos.y < -Game.Instance.ScreenHeightUnits * 0.5f)
+        if (_initialPos.y < -Game.Instance.ScreenHeightUnits * 0.5f - _collider.bounds.extents.y)
         {
+            WakePhysics(false);
             _collider.enabled = false;
             ResetPosition();
             ObjectPool.Pool.Release(gameObject);

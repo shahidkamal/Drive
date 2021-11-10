@@ -46,9 +46,21 @@ public class Vehicle : MonoBehaviour
 
     public virtual void ResetPosition()
     {
-        _rigidbody2D.angularDrag = 0.75f;
+        //_rigidbody2D.angularDrag = 0.75f;
     }
 
+    public void WakePhysics(bool wake = true)
+    {
+        if (wake)
+        {
+            _rigidbody2D.WakeUp();
+        }
+        else
+        {
+            _rigidbody2D.Sleep();
+        }
+    }
+    
     public void SetPosition(Vector2 position)
     {
         _rigidbody2D.angularVelocity = 0;

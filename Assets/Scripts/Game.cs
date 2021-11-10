@@ -82,7 +82,7 @@ public class Game : MonoBehaviour
         _aiCarAppearTimer = 0;
     }
     
-    private void SpawnVehicle()
+    private static void SpawnVehicle()
     {
         var go = ObjectPool.Pool.Get();
         if (go == null)
@@ -95,6 +95,7 @@ public class Game : MonoBehaviour
             go.SetActive(true);
             var vehicle = go.GetComponent<Vehicle>();
             vehicle.ResetPosition();
+            vehicle.WakePhysics();
             vehicle.EnableCollder();
         }
     }
