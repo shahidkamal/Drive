@@ -28,11 +28,11 @@ public class AIVehicle : Vehicle
         do {
             lane = Random.Range(0, Game.NumLanes);
         } while (lane == _previousLane);
-
         _previousLane = lane;
+        
         var xPos = Game.LaneWidth / 2;    // Centre in lane
         xPos -= (Game.LaneWidth * Game.NumLanes / 2);
         xPos += lane * Game.LaneWidth;
-        SetPosition(new Vector2(xPos, Game.Instance.ScreenHeightUnits / 2 + 1));
+        SetPosition(new Vector2(xPos, Game.Instance.ScreenHeightUnits * 0.5f + 1));
     }
 }

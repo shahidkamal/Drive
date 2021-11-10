@@ -46,7 +46,6 @@ public class Vehicle : MonoBehaviour
 
     public virtual void ResetPosition()
     {
-        //_rigidbody2D.angularDrag = 0.75f;
     }
 
     public void WakePhysics(bool wake = true)
@@ -66,7 +65,7 @@ public class Vehicle : MonoBehaviour
         _rigidbody2D.angularVelocity = 0;
         _rigidbody2D.SetRotation(Quaternion.identity);        
         _rigidbody2D.velocity = Vector2.zero;
-        _rigidbody2D.MovePosition(position);
+        _rigidbody2D.position = position;
     }
 
     public void SetMaxSpeed(float speed)
