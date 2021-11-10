@@ -21,7 +21,7 @@ public class FloatVariable : ScriptableObject, ISerializationCallbackReceiver
         Value = value.Value;
     }
 
-    // Shorthand for reading the Value from this object as a bool, use with caution
+    // Shorthand for reading the Value from this object as a float, use with caution
     public static implicit operator float(FloatVariable reference)
     {
         return reference.Value;
