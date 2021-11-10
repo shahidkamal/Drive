@@ -255,7 +255,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 503969083601005924}
-  - component: {fileID: 503969083601005927}
   m_Layer: 0
   m_Name: RoadLines
   m_TagString: Untagged
@@ -289,32 +288,6 @@ Transform:
   m_Father: {fileID: 503969084400192185}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &503969083601005927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503969083601005925}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cead705c6426a14c98147830ef40d78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: {fileID: 11400000, guid: e1290fbfa6845de48984eba07065b594, type: 2}
-  _lines:
-  - {fileID: 503969084803683375}
-  - {fileID: 503969084555247374}
-  - {fileID: 503969083946424569}
-  - {fileID: 503969084668727626}
-  - {fileID: 503969084440364287}
-  - {fileID: 503969083351378430}
-  - {fileID: 503969083674177761}
-  - {fileID: 503969084408732346}
-  - {fileID: 503969083931538018}
-  - {fileID: 503969083300647645}
-  - {fileID: 503969083329098027}
-  - {fileID: 503969083933214830}
 --- !u!1 &503969083674177767
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +707,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 503969084400192185}
-  - component: {fileID: 503969084400192184}
   m_Layer: 0
   m_Name: RoadPiece
   m_TagString: Untagged
@@ -758,19 +730,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &503969084400192184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503969084400192190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e71f4a93a8a9c14895207c830cc8a8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _laneBufferDize: 0
 --- !u!1 &503969084408732344
 GameObject:
   m_ObjectHideFlags: 0

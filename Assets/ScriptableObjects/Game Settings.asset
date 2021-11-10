@@ -24,7 +24,7 @@ MonoBehaviour:
   aiCarMinSpeed: 0.01
   aiCarMaxSpeed: 0.4
   aiCarFrequencyMin: 1
-  aiCarAppearChance: 0.6661
+  aiCarAppearChance: 0.5
   playerPrefab: {fileID: 6087571698647895209, guid: 8ceaff5e75f54394bbcc07e9db9e0bcb, type: 3}
   playerSteerSpeed: 5
   playerLeftScreenBound: -2.5
