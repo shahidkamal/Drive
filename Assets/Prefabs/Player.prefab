@@ -11,6 +11,18 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1657436570253504467, guid: 77b410ca761d56741abed3719a560449, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657436570253504467, guid: 77b410ca761d56741abed3719a560449, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657436570253504467, guid: 77b410ca761d56741abed3719a560449, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4067157648373654594, guid: 77b410ca761d56741abed3719a560449, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
@@ -205,3 +217,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _steeringResponse: 2
   _maxSpeed: 0
+  _power: 125

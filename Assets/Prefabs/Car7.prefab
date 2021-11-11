@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1657436570253504467, guid: 77b410ca761d56741abed3719a560449, type: 3}
       propertyPath: m_Interpolate
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1657436570253504467, guid: 77b410ca761d56741abed3719a560449, type: 3}
       propertyPath: m_GravityScale
@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1657436570253504467, guid: 77b410ca761d56741abed3719a560449, type: 3}
       propertyPath: m_CollisionDetection
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4067157648373654594, guid: 77b410ca761d56741abed3719a560449, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -301,3 +301,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _steeringResponse: 0
   _maxSpeed: 0
+  _power: 100

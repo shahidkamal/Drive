@@ -31,14 +31,10 @@ public class PlayerVehicle : Vehicle
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
-            
-        if (_targetPos.x >= Game.Instance.Settings.PlayerRightScreenBound ||
-            _targetPos.x <= Game.Instance.Settings.PlayerLeftScreenBound)
-        {
-            //_targetPos = _initialPos;
-        }
-        // Now add force in the vector we intend to go
-        _rigidbody2D.AddForce((_targetPos - _initialPos) * 125);
-//        _rigidbody2D.MovePosition(_targetPos);
+        
+        // Now add force in the vector we intend to move towards
+        var targetVector = _targetPos - _initialPos;
+        _rigidbody2D.AddForce(targetVector * _power);
+        _rigidbody2D.velocity = Vector2.ClampMagnitude(_rigidbody2D.velocity, _maxSpeed);
     }
 }

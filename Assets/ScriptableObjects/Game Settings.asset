@@ -21,12 +21,12 @@ MonoBehaviour:
   - {fileID: 8133109537687962113, guid: 7f153eb48d7075a4eade6ce58b2425b1, type: 3}
   - {fileID: 7161249438086043586, guid: 62ca8bcc8548b0b4a89ab37f757fa89e, type: 3}
   - {fileID: 5377936423874831598, guid: 621a547ee6a71ce4797d5cae580057ac, type: 3}
-  aiCarMinSpeed: 0.01
-  aiCarMaxSpeed: 0.4
-  aiCarFrequencyMin: 1
-  aiCarAppearChance: 0.5
+  aiCarMinSpeed: 2
+  aiCarMaxSpeed: 11
+  aiCarFrequencyMin: 1.5
+  aiCarAppearChance: 0.8
   playerPrefab: {fileID: 6087571698647895209, guid: 8ceaff5e75f54394bbcc07e9db9e0bcb, type: 3}
-  playerSteerSpeed: 5
+  playerSteerSpeed: 2.5
   playerLeftScreenBound: -2.5
   playerRightScreenBound: 2.5
   keyLeft: 97

@@ -93,8 +93,6 @@ public class Game : MonoBehaviour
             go.SetActive(true);
             var vehicle = go.GetComponent<Vehicle>();
             vehicle.ResetPosition();
-            //vehicle.WakePhysics();
-            //vehicle.EnableCollder();
         }
     }
 

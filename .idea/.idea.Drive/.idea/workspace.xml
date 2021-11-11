@@ -35,6 +35,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car6.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car7.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RoadPiece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RoadPiece.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" afterDir="false" />
@@ -66,10 +67,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatVariable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RollingRoad.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Road.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +142,7 @@
       <workItem from="1635493770821" duration="4447000" />
       <workItem from="1635500041239" duration="3506000" />
       <workItem from="1636548248645" duration="9157000" />
-      <workItem from="1636616436802" duration="4020000" />
+      <workItem from="1636616436802" duration="6159000" />
     </task>
     <task id="LOCAL-00002" summary="Class hierarchy refactored">
       <created>1635430759854</created>

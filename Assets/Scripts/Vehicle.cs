@@ -10,6 +10,9 @@ public class Vehicle : MonoBehaviour
 
     [Tooltip("Maximum Speed")]  [SerializeField]
     protected float  _maxSpeed;
+
+    [Tooltip("Power")] [SerializeField]
+    protected float _power;
 #pragma warning restore 649 // 'field' is never assigned to
     
     public float MaxSpeed => _maxSpeed;

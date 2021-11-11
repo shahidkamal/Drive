@@ -10,16 +10,13 @@ public class AIVehicle : Vehicle
             
         if (_initialPos.y < -Game.Instance.ScreenHeightUnits * 0.5f - _collider.bounds.extents.y)
         {
-            //WakePhysics(false);
-            //_collider.enabled = false;
             ResetPosition();
             ObjectPool.Pool.Release(gameObject);
         }
         else
         {
-            _rigidbody2D.AddForce((_targetPos - _initialPos) * 125);
-
-            //_rigidbody2D.position = _targetPos;
+            _rigidbody2D.AddForce((_targetPos - _initialPos) * _power);
+            _rigidbody2D.velocity = Vector2.ClampMagnitude(_rigidbody2D.velocity, _maxSpeed);
         }
     }
 
