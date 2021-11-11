@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class AIVehicle : Vehicle
 {
@@ -7,8 +9,8 @@ public class AIVehicle : Vehicle
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
-            
-        if (_initialPos.y < -Game.Instance.ScreenHeightUnits * 0.5f - _collider.bounds.extents.y)
+        var y = Game.Instance.TrackingCamera.transform.position.y;
+        if (_initialPos.y < -Game.Instance.ScreenHeightUnits + y || _initialPos.y > Game.Instance.ScreenHeightUnits + y)
         {
             ResetPosition();
             ObjectPool.Pool.Release(gameObject);
@@ -39,5 +41,11 @@ public class AIVehicle : Vehicle
             yPos = Game.Instance.TrackingCamera.transform.position.y - Game.Instance.ScreenHeightUnits * 0.5f - 1;
         }
         SetPosition(new Vector2(xPos, yPos));
+        SetPower(Game.Instance.Settings.AIInitialPower);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        _power = 0;
     }
 }

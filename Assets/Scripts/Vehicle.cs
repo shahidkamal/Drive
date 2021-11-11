@@ -66,6 +66,11 @@ public class Vehicle : MonoBehaviour
         }
     }
 
+    public void SetPower(float power)
+    {
+        _power = power;
+    }
+    
     public void SetMaxSpeed(float speed)
     {
         _maxSpeed = speed;

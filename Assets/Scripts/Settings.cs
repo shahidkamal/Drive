@@ -29,6 +29,11 @@ public class Settings : ScriptableObject
     private float aiCarAppearChance;
 
     public float AICarAppearChance => aiCarAppearChance;
+
+    [Tooltip("AI Car Initial Power")] [SerializeField]
+    private float aiInitialPower;
+
+    public float AIInitialPower => aiInitialPower;
     
     [Header("Player")]
     [Tooltip("Player Prefab")] [SerializeField]

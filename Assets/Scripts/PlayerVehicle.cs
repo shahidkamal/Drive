@@ -23,7 +23,7 @@ public class PlayerVehicle : Vehicle
 
         if (CentredSteering)
         {
-            _xVelocity *= 0.95f;
+            _xVelocity = 0;
         }
         _maxSpeed = Game.Instance.PlayerSpeed;
     }
