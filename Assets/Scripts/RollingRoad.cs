@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -21,7 +18,7 @@ public class RollingRoad : MonoBehaviour
 
     private void Awake()
     {
-        var position = trackingCamera.position;
+        var position = Game.Instance.TrackingCamera.transform.position;
         position.z = 0;
         position.y += roadLength;
         
@@ -34,7 +31,7 @@ public class RollingRoad : MonoBehaviour
 
     private void Update()
     {
-        var camPos = trackingCamera.position;
+        var camPos = Game.Instance.TrackingCamera.transform.position;;
         if (camPos.y >= roadPieces[0].transform.position.y - roadLength / 2)
         {
             for (var i = 0; i < NumRoadPieces; ++i)

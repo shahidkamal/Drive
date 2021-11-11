@@ -40,7 +40,7 @@ public class Vehicle : MonoBehaviour
         _initialPos = _rigidbody2D.position;
         var velocity = Vector2.zero;
         velocity.x = _xVelocity;
-        velocity.y = _maxSpeed; // - Game.Instance.PlayerSpeed;
+        velocity.y = _maxSpeed; // We used to subtract player speed, but now we do things properly with a rolling road
         _targetPos = _initialPos + velocity * Time.fixedDeltaTime;
     }
 
@@ -65,7 +65,14 @@ public class Vehicle : MonoBehaviour
         _rigidbody2D.angularVelocity = 0;
         _rigidbody2D.SetRotation(Quaternion.identity);        
         _rigidbody2D.velocity = Vector2.zero;
-        _rigidbody2D.position = position;
+        if (_rigidbody2D.isKinematic)
+        {
+            _rigidbody2D.MovePosition(position);
+        }
+        else
+        {
+            _rigidbody2D.position = position;
+        }
     }
 
     public void SetMaxSpeed(float speed)

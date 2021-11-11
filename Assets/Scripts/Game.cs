@@ -25,12 +25,13 @@ public class Game : MonoBehaviour
     
     [Tooltip("Timer UI")]  [SerializeField]
     private TextMeshProUGUI timerText;
+    
 #pragma warning restore 649 // 'field' is never assigned to
     
     private float _gameTimer;
     private float _aiCarAppearTimer;
-    private Camera _camera;
-    
+    public Camera TrackingCamera { get; private set; }
+
     public Settings Settings => settings;
 
     private GameObject _playerGo;
@@ -54,12 +55,12 @@ public class Game : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         
         // Determine screen world space boundaries irrespective of screen size or aspect ratio
-        _camera = Camera.main;
+        TrackingCamera = Camera.main;
         ScreenWidthPixels = Screen.width;
         ScreenHeightPixels = Screen.height;
 
-        var topleft = _camera.ScreenToWorldPoint(new Vector3(0, 0, _camera.nearClipPlane));
-        var bottomRight = _camera.ScreenToWorldPoint(new Vector3(ScreenWidthPixels, ScreenHeightPixels, _camera.nearClipPlane));
+        var topleft = TrackingCamera.ScreenToWorldPoint(new Vector3(0, 0, TrackingCamera.nearClipPlane));
+        var bottomRight = TrackingCamera.ScreenToWorldPoint(new Vector3(ScreenWidthPixels, ScreenHeightPixels, TrackingCamera.nearClipPlane));
         ScreenWidthUnits = bottomRight.x - topleft.x;
         ScreenHeightUnits = bottomRight.y - topleft.y;
     }

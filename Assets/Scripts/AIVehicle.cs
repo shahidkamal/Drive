@@ -17,7 +17,7 @@ public class AIVehicle : Vehicle
         }
         else
         {
-            _rigidbody2D.MovePosition(_targetPos);
+            _rigidbody2D.position = _targetPos;
         }
     }
 
@@ -33,6 +33,12 @@ public class AIVehicle : Vehicle
         var xPos = Game.LaneWidth / 2;    // Centre in lane
         xPos -= (Game.LaneWidth * Game.NumLanes / 2);
         xPos += lane * Game.LaneWidth;
-        SetPosition(new Vector2(xPos, Game.Instance.ScreenHeightUnits * 0.5f + 1));
+        var yPos = Game.Instance.ScreenHeightUnits * 0.5f + 1 + Game.Instance.TrackingCamera.transform.position.y;
+        // If this car is going faster than the player, spawn below
+        if (_maxSpeed > Game.Instance.PlayerSpeed)
+        {
+            yPos = Game.Instance.TrackingCamera.transform.position.y - Game.Instance.ScreenHeightUnits * 0.5f - 1;
+        }
+        SetPosition(new Vector2(xPos, yPos));
     }
 }
