@@ -35,8 +35,10 @@ public class PlayerVehicle : Vehicle
         if (_targetPos.x >= Game.Instance.Settings.PlayerRightScreenBound ||
             _targetPos.x <= Game.Instance.Settings.PlayerLeftScreenBound)
         {
-            _targetPos = _initialPos;
+            //_targetPos = _initialPos;
         }
-        _rigidbody2D.MovePosition(_targetPos);
+        // Now add force in the vector we intend to go
+        _rigidbody2D.AddForce((_targetPos - _initialPos) * 125);
+//        _rigidbody2D.MovePosition(_targetPos);
     }
 }

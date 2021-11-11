@@ -40,7 +40,7 @@ public class Vehicle : MonoBehaviour
         _initialPos = _rigidbody2D.position;
         var velocity = Vector2.zero;
         velocity.x = _xVelocity;
-        velocity.y = _maxSpeed; // We used to subtract player speed, but now we do things properly with a rolling road
+        velocity.y = _maxSpeed;
         _targetPos = _initialPos + velocity * Time.fixedDeltaTime;
     }
 
@@ -48,18 +48,6 @@ public class Vehicle : MonoBehaviour
     {
     }
 
-    public void WakePhysics(bool wake = true)
-    {
-        if (wake)
-        {
-            _rigidbody2D.WakeUp();
-        }
-        else
-        {
-            _rigidbody2D.Sleep();
-        }
-    }
-    
     public void SetPosition(Vector2 position)
     {
         _rigidbody2D.angularVelocity = 0;
