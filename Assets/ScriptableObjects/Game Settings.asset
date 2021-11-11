@@ -27,7 +27,7 @@ MonoBehaviour:
   aiCarAppearChance: 0.8
   aiInitialPower: 100
   playerPrefab: {fileID: 6087571698647895209, guid: 8ceaff5e75f54394bbcc07e9db9e0bcb, type: 3}
-  playerSteerSpeed: 2.5
+  playerSteerSpeed: 4
   playerLeftScreenBound: -2.5
   playerRightScreenBound: 2.5
   keyLeft: 97
