@@ -29,9 +29,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <list id="0bd248af-e6cb-4776-b457-e5491c15ca6a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +59,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Road.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
       </list>
     </option>
@@ -135,6 +134,7 @@
       <workItem from="1635500041239" duration="3506000" />
       <workItem from="1636548248645" duration="9157000" />
       <workItem from="1636616436802" duration="10233000" />
+      <workItem from="1636692938894" duration="5717000" />
     </task>
     <task id="LOCAL-00002" summary="Class hierarchy refactored">
       <created>1635430759854</created>

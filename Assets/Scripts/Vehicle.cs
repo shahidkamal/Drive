@@ -19,11 +19,13 @@ public class Vehicle : MonoBehaviour
     
     protected PolygonCollider2D _collider;
     protected Rigidbody2D _rigidbody2D;
+    protected Vector2 _velocity;
     protected float _xVelocity;
     protected bool CentredSteering { get; private set; }
 
     protected Vector2 _targetPos;
     protected Vector2 _initialPos;
+    protected int _layerMask;
 
     protected virtual void Awake()
     {
@@ -32,6 +34,7 @@ public class Vehicle : MonoBehaviour
         _collider = gameObject.GetComponent<PolygonCollider2D>(); 
         _collider.autoTiling = true;    // Testing to see if this does what we were doing clumsily
         CentredSteering = true;
+        _layerMask = LayerMask.NameToLayer("Vehicle");
     }
 
     protected virtual void Update()
@@ -41,10 +44,9 @@ public class Vehicle : MonoBehaviour
     protected virtual void FixedUpdate()
     {
         _initialPos = _rigidbody2D.position;
-        var velocity = Vector2.zero;
-        velocity.x = _xVelocity;
-        velocity.y = _maxSpeed;
-        _targetPos = _initialPos + velocity * Time.fixedDeltaTime;
+        _velocity.x = _xVelocity;
+        _velocity.y = _maxSpeed;
+        _targetPos = _initialPos + _velocity * Time.fixedDeltaTime;
     }
 
     public virtual void ResetPosition()
