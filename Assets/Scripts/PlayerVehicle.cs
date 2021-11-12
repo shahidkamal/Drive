@@ -6,13 +6,13 @@ public class PlayerVehicle : Vehicle
     {
         if (Input.GetKeyDown(Game.Instance.Settings.KeyLeft))
         {
-            _xVelocity = -_steeringResponse;
+            _acceleration.x = -_steeringResponse;
             CentreSteering(false);
         }
                 
         if (Input.GetKeyDown(Game.Instance.Settings.KeyRight))
         {
-            _xVelocity = _steeringResponse;
+            _acceleration.x = _steeringResponse;
             CentreSteering(false);
         }
 
@@ -23,9 +23,10 @@ public class PlayerVehicle : Vehicle
 
         if (CentredSteering)
         {
-            _xVelocity = 0;
+            _acceleration.x = 0;
         }
         _maxSpeed = Game.Instance.PlayerSpeed;
+        _acceleration.y = _power;
     }
     
     protected override void FixedUpdate()
@@ -33,8 +34,7 @@ public class PlayerVehicle : Vehicle
         base.FixedUpdate();
         
         // Now add force in the vector we intend to move towards
-        var targetVector = _targetPos - _initialPos;
-        _rigidbody2D.AddForce(targetVector * _power);
+        _rigidbody2D.AddForce(_acceleration);
         _rigidbody2D.velocity = Vector2.ClampMagnitude(_rigidbody2D.velocity, _maxSpeed);
     }
 }

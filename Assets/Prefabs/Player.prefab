@@ -215,6 +215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1535966301d24416a18fe5a9f2e8339d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _steeringResponse: 2
+  _steeringResponse: 250
   _maxSpeed: 0
-  _power: 125
+  _initialPower: 125

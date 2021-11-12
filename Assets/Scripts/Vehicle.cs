@@ -12,15 +12,17 @@ public class Vehicle : MonoBehaviour
     protected float  _maxSpeed;
 
     [Tooltip("Power")] [SerializeField]
-    protected float _power;
+    protected float _initialPower;
 #pragma warning restore 649 // 'field' is never assigned to
+    protected float _power;
     
     public float MaxSpeed => _maxSpeed;
     
     protected PolygonCollider2D _collider;
     protected Rigidbody2D _rigidbody2D;
     protected Vector2 _velocity;
-    protected float _xVelocity;
+    protected Vector2 _acceleration;
+    
     protected bool CentredSteering { get; private set; }
 
     protected Vector2 _targetPos;
@@ -34,7 +36,8 @@ public class Vehicle : MonoBehaviour
         _collider = gameObject.GetComponent<PolygonCollider2D>(); 
         _collider.autoTiling = true;    // Testing to see if this does what we were doing clumsily
         CentredSteering = true;
-        _layerMask = LayerMask.NameToLayer("Vehicle");
+        _layerMask = 1 << LayerMask.NameToLayer("Vehicle");
+        _power = _initialPower;
     }
 
     protected virtual void Update()
@@ -44,8 +47,6 @@ public class Vehicle : MonoBehaviour
     protected virtual void FixedUpdate()
     {
         _initialPos = _rigidbody2D.position;
-        _velocity.x = _xVelocity;
-        _velocity.y = _maxSpeed;
         _targetPos = _initialPos + _velocity * Time.fixedDeltaTime;
     }
 

@@ -8,7 +8,7 @@ public class AIVehicle : Vehicle
     private static int _previousLane = -1;
     private static readonly List<Transform> Neighbours  = new List<Transform>(256);
     private static readonly Collider2D[] Results = new Collider2D[256];
-    private const float AvoidanceRadius = 2f;
+    private const float AvoidanceRadius = 3f;
 
     private void Avoidance()
     {
@@ -25,8 +25,15 @@ public class AIVehicle : Vehicle
         }
         
         // Now sum a total force to reduce collisions
-        if (Neighbours.Count == 0) return;    // early out if no candidates found
-
+        if (Neighbours.Count == 0)
+        {
+            return;
+        }
+        if ( _power == 0)
+        {
+            return;    // early out if no candidates found or if already a ragdoll
+        }
+        
         var offset = Vector2.zero;
         var count = 0;
 
@@ -38,7 +45,7 @@ public class AIVehicle : Vehicle
             {
                 ++count;
                 Vector2 d = (pos - neighbourPos).normalized;
-                offset += d / Vector2.Distance(pos, neighbourPos);
+                offset += d / (1 + Vector2.Distance(pos, neighbourPos));
             }
         }
 
@@ -47,17 +54,18 @@ public class AIVehicle : Vehicle
             offset /= count;
         }
 
-        offset = offset.normalized * _maxSpeed - _velocity;
-        _velocity = Vector2.ClampMagnitude(offset, _power);
+        offset = offset * _maxSpeed - _rigidbody2D.velocity;
+        _acceleration.x += offset.x * 25;    // bias towards steering away
+        _acceleration.y += offset.y;
     }
 
     protected override void FixedUpdate()
     {
         _initialPos = _rigidbody2D.position;
-        _velocity.x = _xVelocity;
-        _velocity.y = _maxSpeed;
+        _acceleration.x = 0;
+        _acceleration.y = _power;
+        
         Avoidance();
-        _targetPos = _initialPos + _velocity * Time.fixedDeltaTime;
 
         var y = Game.Instance.TrackingCamera.transform.position.y;
         if (_initialPos.y < -Game.Instance.ScreenHeightUnits + y || _initialPos.y > Game.Instance.ScreenHeightUnits + y)
@@ -67,8 +75,7 @@ public class AIVehicle : Vehicle
         }
         else
         {
-            //_rigidbody2D.AddForce((_targetPos - _initialPos) * _power);
-            _rigidbody2D.AddForce(_velocity);
+            _rigidbody2D.AddForce(_acceleration);
             _rigidbody2D.velocity = Vector2.ClampMagnitude(_rigidbody2D.velocity, _maxSpeed);
         }
     }
@@ -97,8 +104,14 @@ public class AIVehicle : Vehicle
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        _power = 0;
-        print("Boom");
+        if (other.gameObject.layer == this.gameObject.layer)
+        {
+            _power = 0;
+        }
+        else
+        {
+            _power *= 0.9f;
+        }
     }
     
 }

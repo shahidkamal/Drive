@@ -45,16 +45,6 @@ public class Settings : ScriptableObject
     private float playerSteerSpeed;
     public float PlayerSteerSpeed => playerSteerSpeed;
 
-    [Tooltip("Left screen bound")] [SerializeField]
-    private float playerLeftScreenBound;
-
-    public float PlayerLeftScreenBound => playerLeftScreenBound;
-    
-    [Tooltip("Right screen bound")] [SerializeField]
-    private float playerRightScreenBound;
-
-    public float PlayerRightScreenBound => playerRightScreenBound;
-    
     [Header("Keys")]
         
     [Tooltip("Left")] 
