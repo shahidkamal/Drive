@@ -104,7 +104,7 @@ public class AIVehicle : Vehicle
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.layer == this.gameObject.layer)
+        if (other.gameObject.layer == gameObject.layer)
         {
             _power = 0;
         }

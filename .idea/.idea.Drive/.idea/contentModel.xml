@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AIVehicle.cs" t="Include" />
+          <e p="BoostBar.cs" t="Include" />
           <e p="FloatVariable.cs" t="Include" />
           <e p="Game.cs" t="Include" />
           <e p="ListExtensions.cs" t="Include" />

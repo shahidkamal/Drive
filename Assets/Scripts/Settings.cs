@@ -56,8 +56,12 @@ public class Settings : ScriptableObject
     [Tooltip("Right")] 
     [SerializeField]
     private KeyCode keyRight;
-
     public KeyCode KeyRight => keyRight;
+    
+    [Tooltip("Boost")]
+    [SerializeField]
+    private KeyCode keyBoost;
+    public KeyCode KeyBoost => keyBoost;
 
 
 }
