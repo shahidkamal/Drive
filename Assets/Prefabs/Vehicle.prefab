@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _steeringResponse: 0
   _maxSpeed: 0
-  _power: 0
+  _initialPower: 0
 --- !u!212 &4143825021648649399
 SpriteRenderer:
   m_ObjectHideFlags: 0

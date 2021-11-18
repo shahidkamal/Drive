@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 5377936423874831598, guid: 621a547ee6a71ce4797d5cae580057ac, type: 3}
   aiCarMinSpeed: 2
   aiCarMaxSpeed: 9
-  aiCarFrequencyMin: 1.5
+  aiCarFrequencyMin: 1
   aiCarAppearChance: 0.8
   aiInitialPower: 200
   playerPrefab: {fileID: 6087571698647895209, guid: 8ceaff5e75f54394bbcc07e9db9e0bcb, type: 3}

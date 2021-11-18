@@ -41,7 +41,7 @@ public class AIVehicle : Vehicle
         foreach (var t in Neighbours)
         {
             var neighbourPos = t.position;
-            if (Vector2.SqrMagnitude(neighbourPos - pos) < AvoidanceRadius)
+            if (Vector2.SqrMagnitude(neighbourPos - pos) < AvoidanceRadius * AvoidanceRadius)
             {
                 ++count;
                 Vector2 d = (pos - neighbourPos).normalized;
