@@ -24,12 +24,21 @@ public class PlayerVehicle : Vehicle
             boosting = true;
             _power *= 1.5f;
             boostFactor = 2;
+            if (_audioSource != null)
+            {
+                _audioSource.Play();
+            }
         }
         if (!boost && boosting)
         {
             boosting = false;
             _power = _initialPower;
             boostFactor = 1;
+            if (_audioSource != null)
+            {
+                _audioSource.Stop();
+            }
+
         }
     }
     

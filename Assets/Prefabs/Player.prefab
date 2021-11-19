@@ -147,6 +147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8377693789021424039, guid: 77b410ca761d56741abed3719a560449, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8377693789021424042, guid: 77b410ca761d56741abed3719a560449, type: 3}
       propertyPath: _sprite
       value: 
@@ -218,3 +222,5 @@ MonoBehaviour:
   _steeringResponse: 250
   _maxSpeed: 0
   _initialPower: 125
+  _odometer: {fileID: 0}
+  playerBoost: {fileID: 0}

@@ -26,19 +26,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Gauge.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Gauge.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Player Distance.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Player Distance.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NumberUpdater.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/156086__marcolo91__ambulance.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/156086__marcolo91__ambulance.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/217542__medartimus__car-breaking-skid-01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/217542__medartimus__car-breaking-skid-01.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Drive.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Drive.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/PlayerSpeed.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/PlayerSpeed.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" afterDir="false" />
     </list>
     <list id="0bd248af-e6cb-4776-b457-e5491c15ca6a" name="Default Changelist" comment="" />
@@ -70,10 +70,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoostBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NumberUpdater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
       </list>
     </option>
   </component>
@@ -153,6 +153,7 @@
       <workItem from="1637266810982" duration="8079000" />
       <workItem from="1637309499523" duration="24000" />
       <workItem from="1637309551800" duration="3179000" />
+      <workItem from="1637314307961" duration="921000" />
     </task>
     <task id="LOCAL-00002" summary="Class hierarchy refactored">
       <created>1635430759854</created>

@@ -753,6 +753,10 @@ PrefabInstance:
       propertyPath: playerBoost
       value: 
       objectReference: {fileID: 11400000, guid: b4cd8499c488ec944b944f479f7ab1c4, type: 2}
+    - target: {fileID: 4641907953644075789, guid: 8ceaff5e75f54394bbcc07e9db9e0bcb, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6eab6f36b57a07449a25ff858fc62ae9, type: 3}
     - target: {fileID: 6087571698647895205, guid: 8ceaff5e75f54394bbcc07e9db9e0bcb, type: 3}
       propertyPath: m_RootOrder
       value: 4

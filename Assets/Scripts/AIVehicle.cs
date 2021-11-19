@@ -107,6 +107,10 @@ public class AIVehicle : Vehicle
         if (other.gameObject.layer == gameObject.layer)
         {
             _power *= 0.5f;
+            if (other.gameObject.CompareTag("Player") && _audioSource != null)
+            {
+                _audioSource.Play();
+            }
         }
         else
         {

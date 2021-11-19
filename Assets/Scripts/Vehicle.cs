@@ -23,6 +23,7 @@ public class Vehicle : MonoBehaviour
     protected PolygonCollider2D _collider;
     protected Rigidbody2D _rigidbody2D;
     protected Vector2 _acceleration;
+    protected AudioSource _audioSource;
     
     protected bool CentredSteering { get; private set; }
     
@@ -42,6 +43,8 @@ public class Vehicle : MonoBehaviour
         {
             _odometer.SetValue(0);
         }
+
+        _audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     protected virtual void Update()
