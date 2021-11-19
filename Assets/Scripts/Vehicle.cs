@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class Vehicle : MonoBehaviour
 {
@@ -13,19 +11,21 @@ public class Vehicle : MonoBehaviour
 
     [Tooltip("Power")] [SerializeField]
     protected float _initialPower;
+
+    [Tooltip("Odometer")] [SerializeField]
+    protected FloatVariable _odometer;
 #pragma warning restore 649 // 'field' is never assigned to
+    
     protected float _power;
     
     public float MaxSpeed => _maxSpeed;
     
     protected PolygonCollider2D _collider;
     protected Rigidbody2D _rigidbody2D;
-    protected Vector2 _velocity;
     protected Vector2 _acceleration;
     
     protected bool CentredSteering { get; private set; }
-
-    protected Vector2 _targetPos;
+    
     protected Vector2 _initialPos;
     protected int _layerMask;
 
@@ -38,6 +38,10 @@ public class Vehicle : MonoBehaviour
         CentredSteering = true;
         _layerMask = 1 << LayerMask.NameToLayer("Vehicle");
         _power = _initialPower;
+        if (_odometer != null)
+        {
+            _odometer.SetValue(0);
+        }
     }
 
     protected virtual void Update()
@@ -47,7 +51,7 @@ public class Vehicle : MonoBehaviour
     protected virtual void FixedUpdate()
     {
         _initialPos = _rigidbody2D.position;
-        _targetPos = _initialPos + _velocity * Time.fixedDeltaTime;
+        _odometer.SetValue(_odometer + _rigidbody2D.velocity.magnitude);
     }
 
     public virtual void ResetPosition()

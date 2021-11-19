@@ -106,7 +106,7 @@ public class AIVehicle : Vehicle
     {
         if (other.gameObject.layer == gameObject.layer)
         {
-            _power = 0;
+            _power *= 0.5f;
         }
         else
         {

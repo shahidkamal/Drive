@@ -12,6 +12,7 @@
           <e p="FloatVariable.cs" t="Include" />
           <e p="Game.cs" t="Include" />
           <e p="ListExtensions.cs" t="Include" />
+          <e p="NumberUpdater.cs" t="Include" />
           <e p="ObjectPool.cs" t="Include" />
           <e p="PlayerVehicle.cs" t="Include" />
           <e p="Road.cs" t="Include" />
