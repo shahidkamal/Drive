@@ -26,20 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bbf1187-de5c-41c8-9fda-dcf910ac6804" name="Vehicle Class Hierarchy" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/156086__marcolo91__ambulance.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/156086__marcolo91__ambulance.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/217542__medartimus__car-breaking-skid-01.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/217542__medartimus__car-breaking-skid-01.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drive/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vehicle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vehicle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Drive.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Drive.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/PlayerSpeed.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/PlayerSpeed.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NumberUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NumberUpdater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <list id="0bd248af-e6cb-4776-b457-e5491c15ca6a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,10 +60,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoostBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NumberUpdater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIVehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerVehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NumberUpdater.cs" />
       </list>
     </option>
   </component>
@@ -102,6 +92,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop\Pukki.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\shahid\Desktop" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -154,6 +152,7 @@
       <workItem from="1637309499523" duration="24000" />
       <workItem from="1637309551800" duration="3179000" />
       <workItem from="1637314307961" duration="921000" />
+      <workItem from="1637317780559" duration="2372000" />
     </task>
     <task id="LOCAL-00002" summary="Class hierarchy refactored">
       <created>1635430759854</created>
